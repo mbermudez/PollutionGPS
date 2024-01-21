@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">PollutionGPS</string>
+    <string name="my_ip">My IP</string>
 </resources>

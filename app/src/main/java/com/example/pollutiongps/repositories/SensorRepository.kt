@@ -19,9 +19,9 @@ class SensorRepositoryImp : SensorRepository {
         sensorid: String?,
         latitude: Double?,
         longitude: Double?,
-        timegps: LocalDateTime?
+        gpsTime: LocalDateTime?
     ): SensorData {
-        val newSensorData = sensorData.copy(id = ++idCount, sensorid=sensorid, lat=latitude, long=longitude, gpstime = timegps);
+        val newSensorData = sensorData.copy(id = ++idCount, sensorid=sensorid, lat=latitude, long=longitude, time = gpsTime)
         sensorDataList.add(newSensorData)
         return newSensorData
     }

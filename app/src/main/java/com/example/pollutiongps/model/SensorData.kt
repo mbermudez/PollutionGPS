@@ -13,14 +13,13 @@ data class SensorData @RequiresApi(Build.VERSION_CODES.O) constructor(
     var BME280_temperature: Float? = null,
     var BME280_pressure: Float? = null,
     var BME280_humidity: Float? = null,
-    val timeRx: LocalDateTime = LocalDateTime.now(),
     var lat: Double? = null,
     var long: Double? = null,
     val sensordatavalues: Array<ReceivedSensorData>? =null,
-    var gpstime: LocalDateTime? = null
+    var time: LocalDateTime? = null
     ){
     fun toCSVRow(): String {
-        return "${id},${sensorid},${software_version},${SDS_P1},${SDS_P2},${BME280_temperature},${BME280_pressure},${BME280_humidity}, ${timeRx},${lat},${long},${gpstime}"
+        return "${time},${sensorid},${software_version},${SDS_P1},${SDS_P2},${BME280_temperature},${BME280_pressure},${BME280_humidity}, ${lat},${long}"
     }
     fun readata() {
         if (sensordatavalues != null) {

@@ -10,7 +10,7 @@
         android:id="@+id/textViewIP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="My IP"
+        android:text="@string/my_ip"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.143"
@@ -41,5 +41,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.354" />
+
+    <TextView
+        android:id="@+id/tv_p1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="p1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43" />
+
+    <TextView
+        android:id="@+id/tv_p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="p2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.51" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
