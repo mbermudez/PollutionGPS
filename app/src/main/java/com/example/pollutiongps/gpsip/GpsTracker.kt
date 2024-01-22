@@ -190,6 +190,7 @@ class GpsTracker(private val mContext: Context) : Service(),
     override fun onProviderEnabled(provider: String) {
 
     }
+
     override fun onStatusChanged(provider: String, status: Int, extras: Bundle) {}
     override fun onBind(arg0: Intent): IBinder? {
         return null
