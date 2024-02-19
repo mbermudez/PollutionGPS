@@ -10,6 +10,6 @@ You need to share the cellphone data connection with the sensor and configure th
 <p align="center">
 <img src="./images/012.png" width="200">
 </p>
-More instructions soon.
+More instructions soon...
 
 
